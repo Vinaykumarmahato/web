@@ -948,76 +948,124 @@ section {
 /*--------------------------------------------------------------
 # Our Services Section
 --------------------------------------------------------------*/
+
+
+/* Internship Services Section Styles */
+
 .services {
-  padding: 60px 0;
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Add your preferred background color */
 }
 
-.services .service-item {
-  padding: 40px;
-  background: #fff;
-  height: 100%;
-  border-radius: 10px;
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #343a40; /* Add your preferred text color */
 }
 
-.services .service-item .icon {
-  width: 48px;
-  height: 48px;
-  position: relative;
-  margin-bottom: 50px;
+.heading span {
+  color: #007bff; /* Add your preferred accent color */
 }
 
-.services .service-item .icon i {
-  color: var(--color-default);
-  font-size: 56px;
-  transition: ease-in-out 0.3s;
-  z-index: 2;
-  position: relative;
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.services .service-item .icon:before {
-  position: absolute;
-  content: "";
-  height: 100%;
+.services-box {
+  max-width: 350px;
   width: 100%;
-  background: #eeeeee;
-  border-radius: 50px;
-  z-index: 1;
-  top: 10px;
-  right: -20px;
-  transition: 0.3s;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.services .service-item h3 {
-  color: var(--color-default);
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  padding-bottom: 8px;
-  font-size: 22px;
-  position: relative;
+.services-box:hover {
+  transform: translateY(-10px);
+}
+
+.services-box i {
+  font-size: 48px;
+  color: #007bff; /* Add your preferred icon color */
+  margin-bottom: 15px;
+  display: block;
+}
+
+.services-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40; /* Add your preferred text color */
+}
+
+.services-box p {
+  font-size: 16px;
+  color: #6c757d; /* Add your preferred text color */
+  margin-bottom: 20px;
+}
+
+.perks {
+  margin-bottom: 20px;
+}
+
+.perks h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #343a40; /* Add your preferred text color */
+}
+
+.perks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.perks li {
+  margin-bottom: 5px;
+  color: #6c757d; /* Add your preferred text color */
+}
+
+.btn {
   display: inline-block;
-  border-bottom: 4px solid #eeeeee;
-  transition: 0.3s;
-}
-
-.services .service-item p {
-  line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  color: #fff;
+  text-decoration: none;
+  background-color: #007bff; /* Add your preferred button color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.services .service-item .readmore {
-  margin-top: 15px;
-  display: inline-block;
-  color: var(--color-primary);
+.btn:hover {
+  background-color: #0056b3; /* Add your preferred button hover color */
 }
 
-.services .service-item:hover .icon:before {
-  background: #00b6a1;
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .services-box {
+    max-width: 100%;
+  }
 }
 
-.services .service-item:hover h3 {
-  border-color: var(--color-primary);
-}
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
