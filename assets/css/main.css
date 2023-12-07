@@ -34,10 +34,11 @@
 
 /* Colors */
 :root {
-  --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
+  --color-default: #222; /* Dark Gray - Main text color */
+  --color-primary: #9f3cbb; /* Sky Blue - Primary accent color */
+  --color-secondary: #f85a40; /* Coral - Secondary accent color */
 }
+
 
 /* Smooth scroll behavior */
 :root {
@@ -58,7 +59,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: #b60027;
   text-decoration: none;
 }
 
@@ -253,7 +254,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  background: #199dcd;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -444,7 +445,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    color: #006a5d;
+    color: #d46e0e;
   }
 
   .navbar .dropdown ul a i {
@@ -571,7 +572,7 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color: #007466;
+    background-color: #d46e0e;
     border: 1px solid #006459;
   }
 
@@ -614,7 +615,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: rgba(10, 205, 182, 0.8);
     z-index: 9996;
   }
 }
@@ -697,7 +698,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid rgba(60, 212, 195, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -2043,7 +2044,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: #310024; /* Use a shade of blue, you can adjust the hex code */
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -2052,6 +2053,7 @@ section {
   width: 100%;
   text-align: center;
 }
+
 
 .hero .icon-box .title {
   font-weight: 700;
