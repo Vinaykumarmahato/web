@@ -37,7 +37,7 @@
 /* Colors */
 :root {
   --color-default: #222; /* Dark Gray - Main text color */
-  --color-primary: #9f3cbb; /* Sky Blue - Primary accent color */
+  --color-primary: #f119b0; /* Sky Blue - Primary accent color */
   --color-secondary: #f85a40; /* Coral - Secondary accent color */
 }
 
@@ -625,32 +625,81 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+
+/* Button Styles */
+button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3498db; /* Button color, you can change this */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker accent color on hover, you can change this */
+}
+
+/* Lightbox Play Button Styles */
+.position-relative {
+  position: relative;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Adjust as needed */
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  background-image: url('play-icon.png'); /* Replace 'play-icon.png' with your play button icon */
+  background-size: cover;
+  cursor: pointer;
+  display: block;
+  border: none;
+  outline: none;
+}
+
 .about h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 32px; /* Slightly increased font size for better emphasis */
   margin-bottom: 20px;
   font-family: var(--font-secondary);
+  color: var(--color-primary); /* Changed color for better contrast */
 }
 
 .about .call-us {
-  left: 10%;
-  right: 10%;
+  left: 5%; /* Adjusted left spacing for better alignment */
+  right: 5%; /* Adjusted right spacing for better alignment */
   bottom: 0;
   background-color: #fff;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
-  padding: 20px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1); /* Adjusted box shadow for depth */
+  padding: 30px; /* Increased padding for a more spacious feel */
   text-align: center;
+  border-radius: 15px; /* Adjusted border-radius for a smoother appearance */
 }
 
 .about .call-us h4 {
-  font-size: 24px;
+  font-size: 28px; /* Increased font size for better visibility */
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  color: var(--color-secondary); /* Changed color for better contrast */
 }
 
 .about .call-us p {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px; /* Adjusted font size for better readability */
+  font-weight: 600; /* Adjusted font weight for better emphasis */
   color: var(--color-primary);
 }
 
@@ -660,15 +709,15 @@ section {
 }
 
 .about .content ul li {
-  padding: 0 0 10px 30px;
+  padding: 10px 0; /* Adjusted padding for better spacing */
   position: relative;
 }
 
 .about .content ul i {
   position: absolute;
-  font-size: 20px;
-  left: 0;
-  top: -3px;
+  font-size: 24px; /* Adjusted font size for better visibility */
+  left: -30px; /* Adjusted left position for better alignment */
+  top: 0;
   color: var(--color-primary);
 }
 
@@ -677,8 +726,8 @@ section {
 }
 
 .about .play-btn {
-  width: 100px; /* Increased size for a more prominent appearance */
-  height: 100px; /* Increased size for a more prominent appearance */
+  width: 120px; /* Adjusted size for better proportion */
+  height: 120px; /* Adjusted size for better proportion */
   background: radial-gradient(var(--color-accent), rgba(0, 131, 116, 0.4) 52%);
   border-radius: 50%;
   display: flex;
@@ -689,19 +738,19 @@ section {
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Intensified box shadow for depth */
   transition: transform 0.3s ease-in-out;
 }
 
 .about .play-btn:hover {
-  transform: scale(1.1); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
+  transform: scale(1.1); /* Slightly increased scale on hover for a subtle interactive effect */
 }
 
 .about .play-btn::before {
   content: '\25B6'; /* Unicode for a right-pointing triangle (play symbol) */
-  font-size: 36px; /* Increased font size for the play symbol */
+  font-size: 40px; /* Increased font size for better visibility */
   color: #fff; /* White color for the play symbol */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Add this if you want to hide the default browser outline on focus */
@@ -712,8 +761,8 @@ section {
 .about .play-btn:before {
   content: "";
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 150px; /* Adjusted size for better proportion */
+  height: 150px; /* Adjusted size for better proportion */
   animation-delay: 0s;
   animation: pulsate-btn 2s;
   animation-direction: forwards;
@@ -722,46 +771,24 @@ section {
   opacity: 1;
   border-radius: 50%;
   border: 5px solid rgba(60, 212, 195, 0.7);
-  top: -15%;
-  left: -15%;
+  top: -20%; /* Adjusted top position for better alignment */
+  left: -20%; /* Adjusted left position for better alignment */
   background: rgba(198, 16, 0, 0);
 }
 
-.about .play-btn:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
 .about .play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
   animation: none;
-  border-radius: 0;
 }
 
-.about .play-btn:hover:after {
-  border-left: 15px solid var(--color-primary);
-  transform: scale(20);
+.about .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  width: 150px; /* Adjusted size for better proportion */
+  height: 150px; /* Adjusted size for better proportion */
+  border: none;
+  border-radius: 50%;
+  background: rgba(198, 16, 0, 0);
+  transform: scale(1.2); /* Increased scale on hover for a more prominent effect */
 }
 
 @keyframes pulsate-btn {
@@ -779,6 +806,32 @@ section {
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+
+/* Section Title Styles */
+/* Section Title Styles */
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #f71ff3; /* Text color, you can change this */
+}
+
+.section-title span {
+  display: block;
+  font-size: 0.8em;
+  color: #a41cf9d1; /* Subtitle color, you can change this */
+}
+
+/* Optional: Hover effect */
+.section-title:hover {
+  color: #fd1a06; /* Change text color on hover, you can change this */
+}
+
+.section-title:hover span {
+  color: #ef4efa; /* Change subtitle color on hover, you can change this */
+}
+
+
 .clients {
   padding: 40px 0;
 }
@@ -858,7 +911,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(235, 70, 199, 0.524), rgba(220, 29, 249, 0.853)), url("/background.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -978,118 +1031,190 @@ section {
 # Our Services Section
 --------------------------------------------------------------*/
 
-
-/* Internship Services Section Styles */
-
+/* General styles for the services section */
 .services {
   padding: 80px 0;
-  background-color: #f8f9fa; /* Add your preferred background color */
+  background-color: #f8f9fa; /* Light background color */
+  text-align: center;
 }
 
+/* Heading styles */
+/* Heading Styles */
 .heading {
   text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: #343a40; /* Add your preferred text color */
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  position: relative;
+  font: 2em sans-serif;
 }
 
 .heading span {
-  color: #007bff; /* Add your preferred accent color */
+  color: #f410ca; /* Color for the span text, you can change this */
+  font-weight: bold;
 }
 
+.heading::after {
+  content: ''; /* Create an empty content for the pseudo-element */
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #e40707; /* Underline color, you can change this */
+  position: absolute;
+  bottom: 0;
+  left: 25%; /* Adjust the position of the underline */
+}
+
+/* Image container styles */
+.image-container {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Image styles */
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Container for service boxes */
 .services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
-  box-shadow: purple;
 }
 
+/* Individual service box styles */
 .services-box {
-  box-shadow: 0 0 20px rgba(128, 0, 128, 0.8); /* Deep Purple Shadow */
+  box-shadow: 0 0 20px rgb(241, 6, 241);
   max-width: 350px;
   width: 100%;
   background-color: #fff;
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 8px;
-  border: 1px solid #ccc; /* Subtle border for added refinement */
+  border: 1px solid #ccc;
   transition: transform 0.3s ease-in-out;
 }
 
 .services-box:hover {
-  transform: scale(1.05); /* Slight scale-up on hover for a dynamic effect */
-  box-shadow: 0 0 30px rgba(128, 0, 128, 0.9); /* Intensified shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgb(247, 10, 247);
 }
 
-
+/* Hover effect */
 .services-box:hover {
   transform: translateY(-10px);
 }
 
+/* Icon styles */
 .services-box i {
   font-size: 48px;
-  color: #007bff; /* Add your preferred icon color */
+  color: #007bff; /* Accent color */
   margin-bottom: 15px;
   display: block;
 }
 
+/* Heading styles inside the service box */
 .services-box h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #343a40; /* Add your preferred text color */
+  color: #343a40; /* Dark text color */
 }
 
+/* Paragraph styles */
 .services-box p {
   font-size: 16px;
-  color: #6c757d; /* Add your preferred text color */
+  color: #6c757d; /* Subdued text color */
   margin-bottom: 20px;
 }
 
+/* Perks section styles */
 .perks {
   margin-bottom: 20px;
 }
 
+/* Perks heading styles */
 .perks h4 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #343a40; /* Add your preferred text color */
+  color: #343a40; /* Dark text color */
 }
 
+/* Unordered list styles for perks */
 .perks ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* List item styles for perks */
 .perks li {
   margin-bottom: 5px;
-  color: #6c757d; /* Add your preferred text color */
+  color: #6c757d; /* Subdued text color */
 }
 
+/* Advanced Button Styles */
 .btn {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
   text-decoration: none;
-  background-color: #007bff; /* Add your preferred button color */
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
+  background: linear-gradient(45deg, #f70ce7, #1b0225); /* Gradient background */
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 15px rgb(248, 0, 0); /* Subtle box shadow */
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #0056b3; /* Add your preferred button hover color */
+  background: linear-gradient(45deg, #15879e, weight); /* Darker gradient on hover */
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.free-label {
+  font-size: 1em;
+  margin-left: 8px;
+  color: #e74c3c;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
 }
 
 
-
-/* Media query for responsiveness */
+/* Additional styles for responsiveness */
 @media (max-width: 768px) {
   .services-box {
     max-width: 100%;
+  }
+
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-box {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -2111,8 +2236,8 @@ section {
   transition: 0.3s;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgb(246, 3, 3);
+  border: 2px solid rgba(245, 7, 7, 0.983);
 }
 
 .hero .btn-get-started:hover {
@@ -2125,6 +2250,7 @@ section {
   margin-left: 25px;
   color: #fff;
   font-weight: 600;
+  box-shadow: rgb(238, 3, 3);
 }
 
 .hero .btn-watch-video i {
@@ -2186,8 +2312,8 @@ section {
   padding: 70px 40px; /* Increased padding for a more prominent appearance */
   position: relative;
   overflow: hidden;
-  background: #8827e2; /* Adjusted shade of purple for a modern look */
-  box-shadow: 0 0 30px 0 rgba(238, 13, 174, 0.818); /* Enhanced box shadow for depth */
+  background: rgb(73, 6, 73); /* Adjusted shade of purple for a modern look */
+  box-shadow: 0 0 30px 0 rgba(253, 0, 0, 0.99); /* Enhanced box shadow for depth */
   transition: all 0.3s ease-in-out;
   border-radius: 12px; /* Rounded corners for a contemporary touch */
   z-index: 1;
@@ -2199,7 +2325,7 @@ section {
 
 .hero .icon-box:hover {
   transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 0 40px 0 rgb(246, 1, 197); /* Intensified shadow on hover */
+  box-shadow: 0 0 40px 0 rgb(186, 9, 3); /* Intensified shadow on hover */
 }
 
 .hero .icon-box::before {
