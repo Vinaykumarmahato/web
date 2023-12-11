@@ -20,7 +20,9 @@
 
 /*
 
-/* verify */
+/* log in */
+
+
 
 
 
@@ -675,15 +677,36 @@ section {
 }
 
 .about .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  width: 100px; /* Increased size for a more prominent appearance */
+  height: 100px; /* Increased size for a more prominent appearance */
+  background: radial-gradient(var(--color-accent), rgba(0, 131, 116, 0.4) 52%);
   border-radius: 50%;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Added box shadow for depth */
+  transition: transform 0.3s ease-in-out;
+}
+
+.about .play-btn:hover {
+  transform: scale(1.1); /* Scale up on hover for a subtle interactive effect */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
+}
+
+.about .play-btn::before {
+  content: '\25B6'; /* Unicode for a right-pointing triangle (play symbol) */
+  font-size: 36px; /* Increased font size for the play symbol */
+  color: #fff; /* White color for the play symbol */
+}
+
+/* Add this if you want to hide the default browser outline on focus */
+.about .play-btn:focus {
+  outline: none;
 }
 
 .about .play-btn:before {
@@ -793,38 +816,43 @@ section {
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter {
-  padding: 40px 0;
+  padding: 80px 0; /* Increased padding for a more spacious feel */
+  text-align: center; /* Center align the statistics */
 }
 
 .stats-counter .stats-item {
-  padding: 20px 0;
-  border-bottom: 1px solid #e4e4e4;
+  padding: 40px 0; /* Adjusted padding for better spacing */
+  border-bottom: 2px solid #f021d4; /* Subtle border for separation */
 }
 
 .stats-counter .stats-item .purecounter {
-  min-width: 90px;
-  padding-right: 15px;
+  min-width: 150px; /* Increased minimum width for better alignment */
+  padding-right: 30px;
 }
 
 .stats-counter .stats-item i {
-  font-size: 44px;
-  line-height: 0;
-  margin-right: 15px;
+  font-size: 80px; /* Increased font size for a more impactful visual */
+  margin-right: 30px; /* Adjusted margin for better spacing */
+  color: #5a67d8; /* Changed color for better contrast */
 }
 
 .stats-counter .stats-item span {
-  font-size: 40px;
+  font-size: 60px; /* Increased font size for a more prominent number */
   display: block;
   font-weight: 700;
-  color: var(--color-primary);
-  line-height: 40px;
+  color: #ff6b6b; /* Eye-catching color for better emphasis */
+  line-height: 1.2; /* Adjusted line height for better spacing */
+  margin-top: 15px; /* Adjusted margin for better spacing */
 }
 
 .stats-counter .stats-item p {
-  margin: 0;
-  font-family: var(--font-primary);
-  font-size: 14px;
+  margin: 15px 0 0; /* Adjusted margin for better spacing */
+  font-family: 'Arial', sans-serif; /* Changed font family for variety */
+  font-size: 18px; /* Increased font size for better readability */
+  color: #666; /* Darkened text color for better contrast */
 }
+
+
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -974,18 +1002,26 @@ section {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
+  box-shadow: purple;
 }
 
 .services-box {
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.8); /* Deep Purple Shadow */
   max-width: 350px;
   width: 100%;
   background-color: #fff;
   padding: 30px;
   margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc; /* Subtle border for added refinement */
   transition: transform 0.3s ease-in-out;
 }
+
+.services-box:hover {
+  transform: scale(1.05); /* Slight scale-up on hover for a dynamic effect */
+  box-shadow: 0 0 30px rgba(128, 0, 128, 0.9); /* Intensified shadow on hover */
+}
+
 
 .services-box:hover {
   transform: translateY(-10px);
@@ -1076,13 +1112,42 @@ section {
 }
 
 .testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px;
-  margin: 30px 10px;
-  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Use border-box for consistent box sizing */
+  padding: 40px; /* Increased padding for a more comfortable feel */
+  margin: 30px 20px; /* Slightly increased margin for better spacing */
+  box-shadow: 0 0 20px rgba(242, 53, 213, 0.963); /* Enhanced box shadow for depth */
   position: relative;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 15px; /* Rounded corners for a modern touch */
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonials .testimonial-item:hover {
+  transform: translateY(-5px); /* Lift the testimonial slightly on hover */
+  box-shadow: 0 0 30px rgba(241, 33, 206, 0.959); /* Intensified shadow on hover */
+}
+
+.testimonials .testimonial-item::before {
+  content: '\201C'; /* Unicode for opening double quotation mark */
+  font-size: 40px; /* Increased font size for a prominent quote mark */
+  color: #3498db; /* Professional blue color for the quote mark */
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.testimonials .testimonial-item p {
+  margin-top: 20px; /* Increased margin for better spacing between quote mark and text */
+  color: #555; /* Darkened text color for better readability */
+}
+
+.testimonials .testimonial-item h4 {
+  margin-top: 20px; /* Increased margin for better spacing */
+  color: #333; /* Darkened heading color for better contrast */
+}
+
+.testimonials .testimonial-item span {
+  color: #777; /* Subdued color for additional information */
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1434,10 +1499,42 @@ section {
   text-align: center;
   background: #fff;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px; /* Slightly increased padding for a more spacious feel */
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 30px rgba(245, 60, 236, 0.863); /* Enhanced box shadow for depth */
+  transition: transform 0.3s ease-in-out;
 }
+
+.team .member:hover {
+  transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
+  box-shadow: 0 2px 40px rgba(201, 30, 239, 0.879); /* Intensified shadow on hover */
+}
+
+.team .member img {
+  border-radius: 50%; /* Round the corners of the image for a polished look */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Increased margin for spacing between image and content */
+}
+
+.team .member h4 {
+  margin-bottom: 10px; /* Slightly increased margin for better spacing */
+}
+
+.team .member p {
+  color: #666; /* Darkened text color for better readability */
+}
+
+.team .member a {
+  color: #3498db; /* Professional blue color for links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.team .member a:hover {
+  color: #1e87f0; /* Darkened blue on hover for a subtle interactive effect */
+}
+
 
 .team .member img {
   border-radius: 10px;
@@ -1503,27 +1600,32 @@ section {
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  padding: 60px 40px;
-  box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
-  background: #fff;
+  padding: 70px 40px; /* Increased padding for a more spacious feel */
+  box-shadow: 0 5px 25px -5px rgb(245, 10, 190); /* Enhanced box shadow for depth */
+  background: #f9f9f9; /* Lightened background color for better contrast */
   height: 100%;
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px; /* Increased border-radius for a smoother appearance */
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing .pricing-item:hover {
+  transform: scale(1.02); /* Slightly scale up on hover for a subtle interactive effect */
 }
 
 .pricing h3 {
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #555555;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  font-size: 24px; /* Larger font size for better readability */
+  color: #333; /* Darkened text color for better contrast */
   text-align: center;
 }
 
 .pricing .icon {
-  margin: 30px auto 30px auto;
-  width: 70px;
-  height: 70px;
-  background: var(--color-primary);
+  margin: 30px auto 20px auto; /* Adjusted margin for better spacing */
+  width: 80px; /* Increased size for better proportion */
+  height: 80px; /* Increased size for better proportion */
+  background: var(--color-accent); /* Changed background color for better contrast */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1534,76 +1636,74 @@ section {
 
 .pricing .icon i {
   color: #fff;
-  font-size: 28px;
+  font-size: 32px; /* Increased font size for a more impactful visual */
   transition: ease-in-out 0.3s;
   line-height: 0;
 }
 
-.pricing .icon::before {
+.pricing .icon::before,
+.pricing .icon::after {
   position: absolute;
   content: "";
-  height: 86px;
-  width: 86px;
   border-radius: 50%;
-  background: #87c1bb;
   transition: all 0.3s ease-out 0s;
+}
+
+.pricing .icon::before {
+  height: 90px; /* Adjusted size for better proportion */
+  width: 90px; /* Adjusted size for better proportion */
+  background: #87c1bb;
   transform: translateZ(-1px);
 }
 
 .pricing .icon::after {
-  position: absolute;
-  content: "";
-  height: 102px;
-  width: 102px;
-  border-radius: 50%;
+  height: 110px; /* Adjusted size for better proportion */
+  width: 110px; /* Adjusted size for better proportion */
   background: #d2eeeb;
-  transition: all 0.3s ease-out 0s;
   transform: translateZ(-2px);
 }
 
 .pricing h4 {
-  font-size: 48px;
+  font-size: 60px; /* Increased font size for a more prominent number */
   color: var(--color-secondary);
   font-weight: 700;
   font-family: var(--font-secondary);
-  margin-bottom: 0;
+  margin-bottom: 5px; /* Adjusted margin for better spacing */
   text-align: center;
 }
 
 .pricing h4 sup {
-  font-size: 28px;
+  font-size: 32px; /* Increased font size for a more prominent number */
 }
 
 .pricing h4 span {
   color: rgba(108, 117, 125, 0.8);
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px; /* Increased font size for better readability */
+  font-weight: 500; /* Adjusted font weight for better emphasis */
 }
 
 .pricing ul {
-  padding: 20px 0;
+  padding: 30px 0; /* Increased padding for better spacing */
   list-style: none;
   color: #6c757d;
-  text-align: left;
-  line-height: 20px;
+  text-align: center; /* Center align the list items */
+  line-height: 24px; /* Adjusted line height for better spacing */
 }
 
 .pricing ul li {
-  padding: 10px 0;
+  padding: 15px 0; /* Adjusted padding for better spacing */
   display: flex;
   align-items: center;
+  justify-content: center; /* Center align the list items */
 }
 
 .pricing ul i {
   color: #059652;
-  font-size: 24px;
-  padding-right: 3px;
+  font-size: 28px; /* Increased font size for better visibility */
+  padding-right: 5px; /* Adjusted padding for better spacing */
 }
 
-.pricing ul .na {
-  color: rgba(108, 117, 125, 0.5);
-}
-
+.pricing ul .na,
 .pricing ul .na i {
   color: rgba(108, 117, 125, 0.5);
 }
@@ -1614,20 +1714,21 @@ section {
 
 .pricing .buy-btn {
   display: inline-block;
-  padding: 10px 40px;
+  padding: 15px 60px; /* Adjusted padding for a more substantial button */
   border-radius: 50px;
-  color: var(--color-primary);
-  border: 1px solid rgba(0, 131, 116, 0.2);
-  transition: none;
-  font-size: 16px;
+  color: #fff;
+  background: var(--color-primary); /* Changed background color for better contrast */
+  font-size: 18px; /* Increased font size for better visibility */
   font-weight: 600;
   font-family: var(--font-primary);
   transition: 0.3s;
+  margin: 20px 10px; /* Increased margin for better spacing */
+  border: none;
+  cursor: pointer;
 }
 
 .pricing .buy-btn:hover {
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--color-secondary); /* Changed background color on hover for better contrast */
 }
 
 .pricing .featured {
@@ -1637,34 +1738,39 @@ section {
 
 @media (min-width: 992px) {
   .pricing .featured {
-    transform: scale(1.15);
+    transform: scale(1.08); /* Slightly increased scale for better emphasis */
   }
 }
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq .content h3 {
-  font-weight: 400;
-  font-size: 34px;
+  font-weight: 600; /* Increased font weight for better emphasis */
+  font-size: 36px; /* Larger font size for the main heading */
+  color: var(--color-primary); /* Changed color for better contrast */
+  margin-bottom: 20px; /* Increased margin for better spacing */
 }
 
 .faq .content h4 {
-  font-size: 20px;
+  font-size: 22px; /* Increased font size for better readability */
   font-weight: 700;
-  margin-top: 5px;
+  margin-top: 10px; /* Increased margin for better spacing */
+  color: var(--color-secondary); /* Changed color for better contrast */
 }
 
 .faq .content p {
-  font-size: 15px;
-  color: #6c757d;
+  font-size: 16px; /* Increased font size for better readability */
+  color: #777; /* Darkened text color for better contrast */
+  margin-bottom: 20px; /* Increased margin for better spacing */
 }
 
 .faq .accordion-item {
-  border: 0;
-  margin-bottom: 20px;
-  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
+  border: 1px solid #e4e4e4; /* Added border for better separation */
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08); /* Enhanced box shadow for depth */
+  border-radius: 15px; /* Increased border-radius for a smoother appearance */
 }
 
 .faq .accordion-item:last-child {
@@ -1672,25 +1778,25 @@ section {
 }
 
 .faq .accordion-collapse {
-  border: 0;
+  border: 1px solid #e4e4e4; /* Added border for better separation */
 }
 
 .faq .accordion-button {
-  padding: 20px 50px 20px 20px;
+  padding: 20px 30px; /* Adjusted padding for better spacing */
   font-weight: 600;
   border: 0;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-default);
   text-align: left;
-  background: #fff;
-  box-shadow: none;
-  border-radius: 10px;
+  background: #f9f9f9; /* Lightened background color for better contrast */
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1); /* Enhanced box shadow for depth */
+  border-radius: 15px; /* Increased border-radius for a smoother appearance */
 }
 
 .faq .accordion-button .num {
   padding-right: 10px;
-  font-size: 20px;
+  font-size: 22px; /* Increased font size for better visibility */
   line-height: 0;
   color: var(--color-primary);
 }
@@ -1703,34 +1809,70 @@ section {
 
 .faq .accordion-button:after {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px; /* Adjusted position for better spacing */
+  top: 30px; /* Adjusted position for better spacing */
+  content: '\002B'; /* Unicode for a plus sign */
+  font-size: 24px; /* Increased font size for better visibility */
+  color: var(--color-primary);
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq .accordion-button.collapsed:after {
+  transform: rotate(45deg); /* Rotate the plus sign to an 'X' on collapse */
 }
 
 .faq .accordion-body {
-  padding: 0 40px 30px 45px;
-  border: 0;
-  border-radius: 10px;
+  padding: 20px 40px 30px; /* Adjusted padding for better spacing */
+  border: 1px solid #e4e4e4; /* Added border for better separation */
+  border-top: 0; /* Removed top border to avoid double borders */
+  border-radius: 0 0 15px 15px; /* Adjusted border-radius for a smoother appearance */
   background: #fff;
-  box-shadow: none;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); /* Enhanced box shadow for depth */
 }
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
 .recent-posts article {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(243, 21, 221, 0.961); /* Increased box shadow for depth */
   background-color: #fff;
-  padding: 30px;
+  padding: 40px; /* Increased padding for a more spacious feel */
   height: 100%;
-  border-radius: 10px;
+  border-radius: 15px; /* Rounded corners for a modern touch */
   overflow: hidden;
+  transition: transform 0.3s ease-in-out;
 }
+
+.recent-posts article:hover {
+  transform: translateY(-5px); /* Lift the article slightly on hover */
+  box-shadow: 0 8px 30px rgba(243, 32, 222, 0.863); /* Intensified shadow on hover */
+}
+
+.recent-posts article h2 {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  color: #333; /* Darkened heading color for better contrast */
+}
+
+.recent-posts article p {
+  color: #666; /* Darkened text color for better readability */
+}
+
+.recent-posts article a {
+  color: #3498db; /* Professional blue color for links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.recent-posts article a:hover {
+  color: #1e87f0; /* Darkened blue on hover for a subtle interactive effect */
+}
+
 
 .recent-posts .post-img {
   max-height: 240px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
+  box-shadow: purple;
 }
 
 .recent-posts .post-category {
@@ -2041,18 +2183,55 @@ section {
 }
 
 .hero .icon-box {
-  padding: 60px 30px;
+  padding: 70px 40px; /* Increased padding for a more prominent appearance */
   position: relative;
   overflow: hidden;
-  background: #310024; /* Use a shade of blue, you can adjust the hex code */
-  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  background: #8827e2; /* Adjusted shade of purple for a modern look */
+  box-shadow: 0 0 30px 0 rgba(238, 13, 174, 0.818); /* Enhanced box shadow for depth */
   transition: all 0.3s ease-in-out;
-  border-radius: 8px;
+  border-radius: 12px; /* Rounded corners for a contemporary touch */
   z-index: 1;
   height: 100%;
   width: 100%;
   text-align: center;
+  color: #fff; /* White text for better contrast */
 }
+
+.hero .icon-box:hover {
+  transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
+  box-shadow: 0 0 40px 0 rgb(246, 1, 197); /* Intensified shadow on hover */
+}
+
+.hero .icon-box::before {
+  content: '\2605'; /* Unicode for a star symbol */
+  font-size: 30px; /* Increased font size for a decorative icon */
+  color: #f8c600; /* Gold color for the icon */
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero .icon-box h3 {
+  margin-top: 20px; /* Increased margin for better spacing */
+  font-size: 24px; /* Larger font size for the heading */
+}
+
+.hero .icon-box p {
+  margin-top: 15px; /* Increased margin for better spacing */
+  color: #ddd; /* Lightened text color for better readability */
+}
+
+.hero .icon-box a {
+  color: #f8c600; /* Gold color for links */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero .icon-box a:hover {
+  color: #d4a009; /* Darkened gold on hover for a subtle interactive effect */
+}
+
 
 
 .hero .icon-box .title {
@@ -2077,7 +2256,7 @@ section {
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: #096ee9e8;
 }
 
 .hero .icon-box:hover .title a,
