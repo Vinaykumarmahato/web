@@ -20,7 +20,32 @@
 
 /*
 
-/* log in */
+/* contact */
+
+/* Style input fields */
+.input_field {
+  margin-bottom: 20px;
+  box-shadow: rgb(245, 45, 245);
+}
+
+.input_field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #e511fd;
+  box-shadow: rgb(244, 52, 244);
+}
+
+.input_field input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #8907b4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: purple;
+}
+
+
 
 
 
@@ -1069,6 +1094,7 @@ button:hover {
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 20px;
+
 }
 
 /* Image styles */
@@ -1084,6 +1110,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 30px;
+  
 }
 
 /* Individual service box styles */
