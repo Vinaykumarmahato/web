@@ -936,7 +936,7 @@ button:hover {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(235, 70, 199, 0.524), rgba(248, 246, 248, 0.853)), url("/background.jpg") center center;
+  background: linear-gradient(rgba(235, 102, 206, 0.524), rgba(252, 20, 252, 0.853)), url("/background.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
