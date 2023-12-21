@@ -20,22 +20,21 @@ p {
     padding: 20px;
     border-radius: 5px;
     box-sizing: content-box;
-    box-shadow: 0px 0px 10px rgb(245, 8, 233);
     background-color: url;
     transition: background-color 0.3s ease; /* Add transition effect */
-    background: url('your-image-url.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
     
 }
 
-.container:hover {
-    background-color: #f119b0; /* Replace with the desired hover color */
-}
+
 /* Company Logo Styles */
 .company-logo {
     max-width: 200px;
     display: block;
     margin: 0 auto 20px;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 0px 10px rgb(245, 8, 233);
 }
+
 
 /* Verification Form Styles */
 #verification-form {
@@ -104,3 +103,52 @@ button:hover {
         max-width: 800px;
     }
 }
+/* Media queries for responsiveness */
+/* Media queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Adjust as needed based on your header height */
+        background-color: #1a1a1a; /* Add background color */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        display: flex; /* Show the navigation links when active */
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar li {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-nav-toggle {
+        display: block; /* Show the mobile nav toggle button */
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        margin-right: 15px;
+    }
+
+    .mobile-nav-hide {
+        display: none; /* Hide the 'X' icon by default */
+    }
+
+    .mobile-nav-show {
+        display: block; /* Show the 'list' icon by default */
+    }
+}
+
+/* Other styles remain unchanged */
