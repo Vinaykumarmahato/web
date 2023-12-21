@@ -1,209 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Certificate Verification</title>
-    <style>
-        /* Common styles for all screen sizes */
-        /* Input search box styles */
+    <link rel="stylesheet" href="verify.css">
+    <!-- Your other meta tags and links go here -->
 
-        /* Success message styles */
-        #success-message {
-            display: none;
-            margin-top: 20px;
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-        }
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add other vendor CSS files as needed -->
 
-        #success-message h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* Show the success message when the certificate is verified */
-        #result.verified #success-message {
-            display: block;
-        }
-
-        input[type="text"] {
-            width: 80%; /* Reduce the width to make it smaller */
-            padding: 10px;
-            border: 1px solid #007bff;
-            border-radius: 25px;
-            background-color: transparent;
-            color: #007bff;
-            transition: all 0.3s ease;
-            margin: 0 auto; /* Center horizontally */
-            display: block; /* Ensure it takes full width */
-        }
-
-        /* Company logo styles */
-        .company-logo {
-            max-width: 200px; /* Adjust the max width as needed */
-            display: block; /* Center the image horizontally */
-            margin: 0 auto 20px; /* Add spacing below the logo */
-        }
-
-        /* Center vertically within the container */
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
-            height: auto; /* Full viewport height */
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('pexels-pixabay-268533.jpg'); /* Replace with your background image URL */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* Horizontal centering */
-            align-items: center; /* Vertical centering */
-            min-height: 100vh; /* Ensure the body covers the full viewport height */
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-            background-color: rgb(245, 225, 135); /* Semi-transparent white background */
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #080505;
-            border-radius: 5px;
-            margin-bottom: 10px; /* Add bottom margin to separate input fields */
-        }
-
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        #result {
-            margin-top: 20px;
-            display: none;
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        /* Media queries for responsiveness */
-
-        /* Mobile devices */
-        @media (max-width: 480px) {
-            .container {
-                max-width: 90%;
-                padding: 10px;
-            }
-        }
-
-        /* Tablets and smaller desktops */
-        @media (min-width: 481px) and (max-width: 1024px) {
-            .container {
-                max-width: 70%;
-            }
-        }
-
-        /* Larger desktops and laptops */
-        @media (min-width: 1025px) {
-            .container {
-                max-width: 800px;
-            }
-        }
-    </style>
-
-
-
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
+
 <body>
 
-    
-    <div class="container">
-        <img src="Black____Blue_Simple_Company_Logo_-removebg-preview.png" alt="Company Logo" class="company-logo">
-        <h1>Certificate Verification</h1>
-        <form id="verification-form">
-            <input type="text" id="certificate-id" placeholder="Enter Certificate ID">
-            <button type="submit">Verify</button>
-        </form>
-        <div id="result" class="hidden">
-            <h2>Verification Result:</h2>
-            <p id="student-details"></p>
+    <!-- ======= Header ======= -->
+    <section id="topbar" class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:contact@example.com">advindiancoder@gmail.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9931860964</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
+                <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL" class="facebook"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
+                        class="bi bi-linkedin"></i></i></a>
+            </div>
         </div>
-        <div id="success-message" class="hidden">
-            <h2>Congratulations!</h2>
-            <p>Your certificate is verified.</p>
+    </section><!-- End Top Bar -->
+
+    <header id="header" class="header d-flex align-items-center">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="Black____Blue_Simple_Company_Logo_-removebg-preview.png" alt="logo">
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#recent-posts">Blog</a></li>
+                    <li class="dropdown"><a href="#"><span>Quiz</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="#">Java</a></li>
+                            <li class="dropdown"><a href="#"><span>More</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">DSA</a></li>
+                                    <li><a href="#">C++</a></li>
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Kotlin</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sample-inner-page.html">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
         </div>
-    </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+    <!-- End Header -->
+
+    <main id="main">
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs">
+            <div class="page-header d-flex align-items-center" style="background-image: url('');">
+                <div class="container position-relative">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h2>Certificate Verification</h2>
+                            <p>Don't miss out on this opportunity to test your skills, earn certificates, and receive
+                                valuable career guidance. Join today and elevate your programming expertise!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main><!-- End #main -->
 
 
 
-    
-    <script>
-        // Sample student details (replace with your data)
-        const studentData = [
-            { certificateId: "ADV860964", name: "Vinay Kumar", Domain: "Java Developer", Starting_date: "15/09/2023", Ending_date: "15/10/2023" },
-            { certificateId: "ADV860965", name: "Rohit Kumar", Domain: "Full Stack Developer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
-            { certificateId: "ADV860966", name: "Anish Kumar", Domain: "Full Stack Developer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
-            { certificateId: "ADV860967", name: "Divakar Bharti", Domain: "UI/UX Designer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
+            <div class="container">
+                <img src="Black____Blue_Simple_Company_Logo_-removebg-preview.png" alt="Company Logo" class="company-logo">
+                <h1>Certificate Verification</h1>
+                <form id="verification-form">
+                    <input type="text" id="certificate-id" placeholder="Enter Certificate ID">
+                    <button type="submit">Verify</button>
+                </form>
+                <div id="result" class="hidden">
+                    <h2>Verification Result:</h2>
+                    <p id="student-details"></p>
+                </div>
+                <div id="success-message" class="hidden">
+                    <h2>Congratulations!</h2>
+                    <p>Your certificate is verified.</p>
+                </div>
+            </div>
+        
+        
+        
+        
+            <script>
+                // Sample student details (replace with your data)
+                const studentData = [
+                    { certificateId: "ADV860964", name: "Vinay Kumar", Domain: "Java Developer", Starting_date: "15/09/2023", Ending_date: "15/10/2023" },
+                    { certificateId: "ADV860965", name: "Rohit Kumar", Domain: "Full Stack Developer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
+                    { certificateId: "ADV860966", name: "Anish Kumar", Domain: "Full Stack Developer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
+                    { certificateId: "ADV860967", name: "Divakar Bharti", Domain: "UI/UX Designer", Starting_date: "01/09/2023", Ending_date: "01/10/2023" },
+        
+                ];
+        
+                const form = document.getElementById("verification-form");
+                const certificateIdInput = document.getElementById("certificate-id");
+                const resultDiv = document.getElementById("result");
+                const studentDetails = document.getElementById("student-details");
+                const successMessage = document.getElementById("success-message");
+        
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const certificateId = certificateIdInput.value.trim();
+        
+                    const student = studentData.find((student) => student.certificateId === certificateId);
+        
+                    if (student) {
+                        resultDiv.style.display = "block";
+                        studentDetails.innerHTML = `
+                            <strong>Name:</strong> ${student.name}<br>
+                            <strong>Domain:</strong> ${student.Domain}<br>
+                            <strong>Starting Date:</strong> ${student.Starting_date}<br>
+                            <strong>Ending Date:</strong> ${student.Ending_date}<br>
+                        `;
+                        successMessage.style.display = "block"; // Show the success message
+                    } else {
+                        resultDiv.style.display = "none";
+                        successMessage.style.display = "none"; // Hide the success message
+                        alert("Certificate ID not found. Please check the ID and try again.");
+                    }
+                });
+            </script>
+        
 
-        ];
 
-        const form = document.getElementById("verification-form");
-        const certificateIdInput = document.getElementById("certificate-id");
-        const resultDiv = document.getElementById("result");
-        const studentDetails = document.getElementById("student-details");
-        const successMessage = document.getElementById("success-message");
 
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const certificateId = certificateIdInput.value.trim();
 
-            const student = studentData.find((student) => student.certificateId === certificateId);
 
-            if (student) {
-                resultDiv.style.display = "block";
-                studentDetails.innerHTML = `
-                    <strong>Name:</strong> ${student.name}<br>
-                    <strong>Domain:</strong> ${student.Domain}<br>
-                    <strong>Starting Date:</strong> ${student.Starting_date}<br>
-                    <strong>Ending Date:</strong> ${student.Ending_date}<br>
-                `;
-                successMessage.style.display = "block"; // Show the success message
-            } else {
-                resultDiv.style.display = "none";
-                successMessage.style.display = "none"; // Hide the success message
-                alert("Certificate ID not found. Please check the ID and try again.");
-            }
-        });
-    </script>
+
+
+
+
+
+   
+
+    <!-- ======= Footer ======= -->
+
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-info">
+
+                    <a href="index.html">ADV Indian Coder</a>
+
+                    <div class="social-links d-flex mt-4">
+                        <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
+                        <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL"
+                            class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
+                                class="bi bi-linkedin"></i></i></a>
+                    </div>
+                    <br><br>
+                    <h2><a href="index.html"></a>ADV Indian Coder</h2><br><br>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html#hero">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Courses</a></li>
+                        <li><a href="index.html#team">Team</a></li>
+                        <li><a href="index.html#recent-posts">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="index.html">Web Development</a></li>
+                        <li><a href="index.html">Data Science</a></li>
+                        <li><a href="index.html">Artificial Intelligence</a></li>
+                        <li><a href="index.html">Java Programming</a></li>
+                        <li><a href="index.html">UI/UX Design</a></li>
+                        <li><a href="index.html">Python Programming</a></li>
+                        <li><a href="index.html">C++ Programming</a></li>
+                        <li><a href="index.html">Machine Learning</a></li>
+                        <li><a href="index.html">Cloud Computing</a></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>ADV Indian Coder</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
 </body>
+
 </html>
