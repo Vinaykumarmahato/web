@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Certificates Verification Styles */
+
+.container {
+    text-align: center;
+    margin: 50px auto; /* Adjust margin as needed */
+    max-width: 100px; /* This value might be too small, consider adjusting it */
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 10px rgb(245, 8, 233);
+    background-color: url;
+    transition: background-color 0.3s ease; /* Add transition effect */
+    background: url('your-image-url.jpg') center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+    
+}
+
+.container:hover {
+    background-color: #f119b0; /* Replace with the desired hover color */
+}
+/* Company Logo Styles */
+.company-logo {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Verification Form Styles */
+#verification-form {
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(164, 0, 179, 0.8);
+    border: 1px solid #eb1fbe;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+    background-color: #f11924;
+    color: rgb(225, 24, 252);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #d414e6;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 20px;
+    display: none;
+    border: 1px solid #f317f3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Tablets and smaller desktops */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+}
+
+/* Larger desktops and laptops */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 800px;
+    }
+}
