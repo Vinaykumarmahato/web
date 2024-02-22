@@ -1,4 +1,16 @@
 
+.linkedin {
+  display: inline-block; /* Ensures the link behaves like a block-level element */
+}
+
+.linkedin-icon {
+  width: 24px; /* Set the width and height according to your icon size */
+  height: 24px;
+  /* Add any additional styling you need, such as margin, padding, etc. */
+}
+
+
+
 
 
 .subscribe-icon {
@@ -2265,9 +2277,9 @@ button:hover {
   border-radius: 50px;
   transition: 0.3s;
   color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgb(246, 3, 3);
-  border: 2px solid rgba(245, 7, 7, 0.983);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 0 15px rgb(243, 240, 240);
+  border: 2px solid rgba(236, 228, 228, 0.983);
 }
 
 .hero .btn-get-started:hover {
@@ -2280,7 +2292,7 @@ button:hover {
   margin-left: 25px;
   color: #fff;
   font-weight: 600;
-  box-shadow: rgb(238, 3, 3);
+  box-shadow: rgb(245, 241, 245);
 }
 
 .hero .btn-watch-video i {
@@ -2342,8 +2354,8 @@ button:hover {
   padding: 70px 40px; /* Increased padding for a more prominent appearance */
   position: relative;
   overflow: hidden;
-  background: rgb(73, 6, 73); /* Adjusted shade of purple for a modern look */
-  box-shadow: 0 0 30px 0 rgba(253, 0, 0, 0.99); /* Enhanced box shadow for depth */
+  background: rgb(190, 202, 207); /* Adjusted shade of purple for a modern look */
+  box-shadow: 0 0 30px 0 rgba(77, 129, 133, 0.99); /* Enhanced box shadow for depth */
   transition: all 0.3s ease-in-out;
   border-radius: 12px; /* Rounded corners for a contemporary touch */
   z-index: 1;
@@ -2355,7 +2367,7 @@ button:hover {
 
 .hero .icon-box:hover {
   transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 0 40px 0 rgb(186, 9, 3); /* Intensified shadow on hover */
+  box-shadow: 0 0 40px 0 rgba(88, 222, 255, 0.322); /* Intensified shadow on hover */
 }
 
 .hero .icon-box::before {
@@ -2412,7 +2424,7 @@ button:hover {
 }
 
 .hero .icon-box:hover {
-  background: #096ee9e8;
+  background: #f6f5f756;
 }
 
 .hero .icon-box:hover .title a,
