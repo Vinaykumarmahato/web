@@ -1,4 +1,6 @@
 
+
+
 @media (max-width: 991px) {
   .hero .row {
     flex-direction: column-reverse; /* Reverse the column order on smaller screens */
@@ -1215,23 +1217,23 @@ button:hover {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
-  background: linear-gradient(45deg, #f70ce7, #1b0225); /* Gradient background */
+  background: linear-gradient(45deg, #0022f9, #000000); /* Gradient background */
   padding: 15px 30px;
   border-radius: 8px;
   border: none;
-  box-shadow: 0 5px 15px rgb(248, 0, 0); /* Subtle box shadow */
+  box-shadow: 0 5px 15px rgb(4, 4, 4); /* Subtle box shadow */
   transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background: linear-gradient(45deg, #15879e, weight); /* Darker gradient on hover */
+  background: linear-gradient(45deg, #f6f7f7, weight); /* Darker gradient on hover */
   transform: scale(1.05); /* Scale up slightly on hover */
 }
 
 .free-label {
   font-size: 1em;
   margin-left: 8px;
-  color: #e74c3c;
+  color: #4ce331;
 }
 
 /* Responsive Styles */
