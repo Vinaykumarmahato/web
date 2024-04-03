@@ -1,4 +1,9 @@
 
+@media (max-width: 991px) {
+  .hero .row {
+    flex-direction: column-reverse; /* Reverse the column order on smaller screens */
+  }
+}
 
 
 .subscribe-icon {
@@ -65,7 +70,7 @@
 /* Colors */
 :root {
   --color-default: #222; /* Dark Gray - Main text color */
-  --color-primary: #f119b0; /* Sky Blue - Primary accent color */
+  --color-primary: #272990; /* Sky Blue - Primary accent color */
   --color-secondary: #f85a40; /* Coral - Secondary accent color */
 }
 
@@ -2266,8 +2271,8 @@ button:hover {
   transition: 0.3s;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgb(246, 3, 3);
-  border: 2px solid rgba(245, 7, 7, 0.983);
+  box-shadow:#c9d1d9;
+  border: 2px solid #c9d1d9;
 }
 
 .hero .btn-get-started:hover {
@@ -2280,7 +2285,7 @@ button:hover {
   margin-left: 25px;
   color: #fff;
   font-weight: 600;
-  box-shadow: rgb(238, 3, 3);
+  box-shadow: rgb(13, 12, 12);
 }
 
 .hero .btn-watch-video i {
@@ -2338,12 +2343,22 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .order-lg-1 {
+    order: -1; /* Changing the order to negative */
+  }
+  .order-lg-2 {
+    order: -2; /* Changing the order to negative */
+  }
+}
+
+
 .hero .icon-box {
   padding: 70px 40px; /* Increased padding for a more prominent appearance */
   position: relative;
   overflow: hidden;
-  background: rgb(73, 6, 73); /* Adjusted shade of purple for a modern look */
-  box-shadow: 0 0 30px 0 rgba(253, 0, 0, 0.99); /* Enhanced box shadow for depth */
+  background: rgb(12 119 66); /* Adjusted shade of purple for a modern look */
+  box-shadow: 0 0 30px 0 rgba(2, 2, 2, 0.99); /* Enhanced box shadow for depth */
   transition: all 0.3s ease-in-out;
   border-radius: 12px; /* Rounded corners for a contemporary touch */
   z-index: 1;
@@ -2355,7 +2370,7 @@ button:hover {
 
 .hero .icon-box:hover {
   transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 0 40px 0 rgb(186, 9, 3); /* Intensified shadow on hover */
+  box-shadow: 0 0 40px 0 rgb(0, 0, 0); /* Intensified shadow on hover */
 }
 
 .hero .icon-box::before {
@@ -2412,7 +2427,7 @@ button:hover {
 }
 
 .hero .icon-box:hover {
-  background: #096ee9e8;
+  background: ;
 }
 
 .hero .icon-box:hover .title a,
