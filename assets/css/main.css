@@ -436,7 +436,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: #fff;
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -572,7 +572,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: rgba(34, 226, 24, 0.9);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -587,7 +587,7 @@ section {
     font-family: var(--font-primary);
     font-size: 15px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    color: fff;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -628,8 +628,8 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color: #d46e0e;
-    border: 1px solid #006459;
+    background-color: var(--bs-secondary-border-subtle);
+    border: 1px solid #050c0b;
   }
 
   .navbar .dropdown>.dropdown-active,
