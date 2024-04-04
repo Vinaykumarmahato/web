@@ -1294,134 +1294,112 @@ button:hover {
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
-.testimonials .testimonial-wrap {
-  padding-left: 10px;
+
+
+/* Testimonial Section */
+.testimonials {
+  padding: 80px 0;
+  background-color: #f7f7f7;
 }
 
-.testimonials .testimonial-item {
-  box-sizing: border-box; /* Use border-box for consistent box sizing */
-  padding: 40px; /* Increased padding for a more comfortable feel */
-  margin: 30px 20px; /* Slightly increased margin for better spacing */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.774); /* Enhanced box shadow for depth */
+.testimonials .section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonials .section-header p {
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
   position: relative;
-  background: #fff;
-  border-radius: 15px; /* Rounded corners for a modern touch */
-  transition: transform 0.3s ease-in-out;
+  color: #666;
 }
 
-.testimonials .testimonial-item:hover {
-  transform: translateY(-5px); /* Lift the testimonial slightly on hover */
-  box-shadow: 0 0 30px rgba(33, 82, 241, 0.959); /* Intensified shadow on hover */
-}
-
-.testimonials .testimonial-item::before {
-  content: '\201C'; /* Unicode for opening double quotation mark */
-  font-size: 40px; /* Increased font size for a prominent quote mark */
-  color: #3498db; /* Professional blue color for the quote mark */
+.testimonials .section-header p::before {
+  content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #007bff;
+  bottom: 0;
+  left: 0;
 }
 
-.testimonials .testimonial-item p {
-  margin-top: 20px; /* Increased margin for better spacing between quote mark and text */
-  color: #555; /* Darkened text color for better readability */
+.testimonials .swiper-slide {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+  padding: 30px;
+  text-align: center;
 }
 
-.testimonials .testimonial-item h4 {
-  margin-top: 20px; /* Increased margin for better spacing */
-  color: #333; /* Darkened heading color for better contrast */
+.testimonials .testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
 }
 
-.testimonials .testimonial-item span {
-  color: #777; /* Subdued color for additional information */
+.testimonials h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Example font-family */
 }
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
-  margin-right: 15px;
-}
-
-.testimonials .testimonial-item h3 {
+.testimonials h4 {
   font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #000;
+  color: #777;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif; /* Example font-family */
 }
 
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
+.testimonials .stars {
+  margin-bottom: 15px;
 }
 
-.testimonials .testimonial-item .stars {
-  margin: 10px 0;
+.testimonials .quote-icon-left {
+  color: #007bff;
+  font-size: 24px;
+  margin-right: 5px;
 }
 
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
+.testimonials .quote-icon-right {
+  color: #007bff;
+  font-size: 24px;
+  margin-left: 5px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: #009d8b;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px auto 15px auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-@media (max-width: 767px) {
-  .testimonials .testimonial-wrap {
-    padding-left: 0;
+@media (max-width: 768px) {
+  .testimonials .section-header h2 {
+    font-size: 30px;
   }
 
-  .testimonials .testimonial-item {
-    padding: 30px;
-    margin: 15px;
+  .testimonials .section-header p {
+    font-size: 14px;
   }
 
-  .testimonials .testimonial-item .testimonial-img {
-    position: static;
-    left: auto;
+  .testimonials .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonials .swiper-slide {
+    padding: 20px;
+  }
+
+  .testimonials h3 {
+    font-size: 20px;
+  }
+
+  .testimonials h4 {
+    font-size: 16px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Section
