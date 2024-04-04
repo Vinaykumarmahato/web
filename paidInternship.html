@@ -2,523 +2,549 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Java Quize</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>Java Quize</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="logo (2).png" rel="icon">
-    <link href="logo (2).png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="logo (2).png" rel="icon">
+  <link href="logo (2).png" rel="apple-touch-icon">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <form action="contact.php" method="post" role="form" class="php-email-form">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <form action="contact.php" method="post" role="form" class="php-email-form">
 
-        <!-- Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <!-- Template Main CSS File -->
-        <link href="assets/css/main.css" rel="stylesheet">
-        <link href="forms/contact.php" rel="php-email-form">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="forms/contact.php" rel="php-email-form">
 
 
 </head>
 
 <body>
 
-    <!-- ======= Header ======= -->
-    <section id="topbar" class="topbar d-flex align-items-center">
-        <div class="container d-flex justify-content-center justify-content-md-between">
-            <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">advindiancoder@gmail.com</a></i>
-                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9931860964</span></i>
-            </div>
-            <div class="social-links d-none d-md-flex align-items-center">
-                <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
-                <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL" class="facebook"><i
-                        class="bi bi-facebook"></i></a>
-                <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
-                        class="bi bi-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
-                        class="bi bi-linkedin"></i></i></a>
-            </div>
-        </div>
-    </section><!-- End Top Bar -->
-
-    <header id="header" class="header d-flex align-items-center">
-
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="Black____Blue_Simple_Company_Logo_-removebg-preview.png" alt="logo">
-            </a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a href="index.html#hero">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="course.html">Courses</a></li>
-                    <li><a href="index.html#team">Team</a></li>
-                    <li><a href="index.html#recent-posts">Blog</a></li>
-                    <li class="dropdown"><a href="#"><span>Quiz</span> <i
-                                class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                            <li><a href="#">Java</a></li>
-                            <li class="dropdown"><a href="#"><span>More</span> <i
-                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
-                                <ul>
-                                    <li><a href="#">DSA</a></li>
-                                    <li><a href="#">C++</a></li>
-                                    <li><a href="#">HTML</a></li>
-                                    <li><a href="#">CSS</a></li>
-                                    <li><a href="#">C</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Python</a></li>
-                            <li><a href="#">Kotlin</a></li>
-                            <li><a href="#">JavaScript</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="sample-inner-page.html">Contact</a></li>
-                </ul>
-            </nav><!-- .navbar -->
-
-            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
-        </div>
-    </header><!-- End Header -->
-    <!-- End Header -->
-    <!-- End Header -->
-
-    <main id="main">
-        <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs">
-            <div class="page-header d-flex align-items-center" style="background-image: url('');">
-                <div class="container position-relative">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-6 text-center">
-                            <h2>Free Internship Opportunity!</h2>
-                            <p>Unlock your potential with our exciting internship program. Gain hands-on experience, enhance your skills, and jumpstart your career. Apply now and embark on a journey towards success!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main><!-- End #main -->
-
-
-    <!-- Internship Services Section Design for ADV Indian Coder -->
-    <section class="services" id="internship"
-      style="background-image: url(''); background-size: cover; background-position: center;">
-      <h2 class="heading">Internship Program at <span>ADV Indian Coder</span></h2>
-
-      <div class="services-container">
-
-        <!-- Web Development Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/web development.png" alt="Web Development Internship Image">
-          </div>
-          <i class="bx bx-code-alt"></i>
-          <h3>Web Development Internship</h3>
-          <p>
-            Explore the exciting world of web development through our 4-Week Virtual Internship Program at ADV Indian
-            Coder.
-            Gain hands-on experience, receive an official Offer Letter, and enhance your skills in a dynamic learning
-            environment.
-            Apply now to kickstart your journey in web development!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- Data Science Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/data science.jpeg" alt="Data Science Internship Image">
-          </div>
-          <i class="bx bxs-data"></i>
-          <h3>Data Science Internship</h3>
-          <p>
-            Dive into the world of data science with our 4-Week Virtual Internship Program. Join ADV Indian Coder to
-            receive valuable
-            insights, an official Offer Letter, and a chance to boost your career in data science. Apply now to embark
-            on a rewarding
-            internship experience!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- Artificial Intelligence Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/artificial inteligence.jpeg" alt="AI Internship Image">
-          </div>
-          <i class="bx bx-brain"></i>
-          <h3>Artificial Intelligence Internship</h3>
-          <p>
-            Immerse yourself in the realm of artificial intelligence with our specialized internship program. Unlock the
-            potential of AI,
-            receive an official Offer Letter, and build a foundation for a successful career. Apply now to join ADV
-            Indian Coder in
-            shaping the future of AI!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- Java Programming Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/java programming.jpeg" alt="Java Programming Internship Image">
-          </div>
-          <i class="bx bxl-java"></i>
-          <h3>Java Programming Internship</h3>
-          <p>
-            Master the art of Java programming through our intensive internship program. Gain practical experience,
-            receive an official
-            Offer Letter, and propel your career in the world of Java development. Apply now to become a Java expert
-            with ADV Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- UI/UX Design Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/UI Ux.jpeg" alt="UI/UX Design Internship Image">
-          </div>
-          <i class="bx bxs-paint"></i>
-          <h3>UI/UX Design Internship</h3>
-          <p>
-            Unleash your creativity in the field of UI/UX design with our specialized internship program. Receive
-            hands-on experience,
-            an official Offer Letter, and the opportunity to shape user experiences. Apply now to redefine design
-            standards with ADV Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- Python Programming Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/python.jpeg" alt="Python Programming Internship Image">
-          </div>
-          <i class="bx bxl-python"></i>
-          <h3>Python Programming Internship</h3>
-          <p>
-            Delve into the world of Python programming with our immersive internship program. Acquire hands-on skills,
-            receive an official
-            Offer Letter, and pave your way to success in Python development. Apply now to become a Python pro with ADV
-            Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- C++ Programming Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/c++.jpeg" alt="C++ Programming Internship Image">
-          </div>
-          <i class="bx bxl-c-plus-plus"></i>
-          <h3>C++ Programming Internship</h3>
-          <p>
-            Sharpen your skills in C++ programming with our dedicated internship program. Gain practical insights,
-            receive an official
-            Offer Letter, and advance your career in C++ development. Apply now to become a proficient C++ coder with
-            ADV Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-
-
-
-
-            <!-- Front-End Internship -->
-            <div class="services-box">
-              <div class="image-container">
-                <img src="/front end.jpeg" alt="FrontEnd Development Internship Image">
-              </div>
-              <i class="bx bxl-c-plus-plus"></i>
-              <h3>Front-end Development Internship</h3>
-              <p>
-                Sharpen your skills in Front-end Development with our dedicated internship program. Gain practical insights,
-                receive an official
-                Offer Letter, and advance your career in Front-end Development. Apply now to become a proficient coder with
-                ADV Indian Coder!
-              </p>
-              <div class="perks">
-                <h4>Perks:</h4>
-                <ul>
-                  <li>Official Offer Letter</li>
-                  <li>Internship Certificate</li>
-                  <li>Letter of Recommendation based on Performance</li>
-                </ul>
-              </div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-                class="btn">Apply Now <span class="free-label">(Free)</span></a>
-            </div>
-
-
-
-
-                <!-- C++ Programming Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="cybersecurity.jpeg" alt="C++ Programming Internship Image">
-          </div>
-          <i class="bx bxl-c-plus-plus"></i>
-          <h3>Cybersecurity Internship</h3>
-          <p>
-            Sharpen your skills in Cybersecurity with our dedicated internship program. Gain practical insights,
-            receive an official
-            Offer Letter, and advance your career in Cybersecurity. Apply now to become a proficient in Cybersecurity with
-            ADV Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
-        <!-- Machine Learning Internship -->
-        <div class="services-box">
-          <div class="image-container">
-            <img src="/machine learning.jpeg" alt="Machine Learning Internship Image">
-          </div>
-          <i class="bx bxl-tensorflow"></i>
-          <h3>Machine Learning Internship</h3>
-          <p>
-            Immerse yourself in the fascinating world of machine learning with our specialized internship program. Gain
-            valuable
-            experience, receive an official Offer Letter, and pave your way to a successful career in machine learning.
-            Apply now
-            to become a machine learning expert with ADV Indian Coder!
-          </p>
-          <div class="perks">
-            <h4>Perks:</h4>
-            <ul>
-              <li>Official Offer Letter</li>
-              <li>Internship Certificate</li>
-              <li>Letter of Recommendation based on Performance</li>
-            </ul>
-          </div>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-            class="btn">Apply Now <span class="free-label">(Free)</span></a>
-        </div>
-
- <!-- Data Analytics Internship -->
- <div class="services-box">
-  <div class="image-container">
-    <img src="data analytics.jpeg" alt="Machine Learning Internship Image">
-  </div>
-  <i class="bx bxl-tensorflow"></i>
-  <h3>Data Analytics Internship</h3>
-  <p>
-    Immerse yourself in the fascinating world of Data Analytics with our specialized internship program. Gain
-    valuable
-    experience, receive an official Offer Letter, and pave your way to a successful career in Data Analytics Internship.
-    Apply now
-    to become a Data Analytics Internship expert with ADV Indian Coder!
-  </p>
-  <div class="perks">
-    <h4>Perks:</h4>
-    <ul>
-      <li>Official Offer Letter</li>
-      <li>Internship Certificate</li>
-      <li>Letter of Recommendation based on Performance</li>
-    </ul>
-  </div>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
-    class="btn">Apply Now <span class="free-label">(Free)</span></a>
-</div>
-
-
-
-        <!-- Additional internship boxes can be added based on other domains -->
-
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a
+            href="mailto:contact@example.com">advindiancoder@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 9931860964</span></i>
       </div>
-    </section>
-    <!-- End of Internship Services Section -->
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
+        <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
+            class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="Black____Blue_Simple_Company_Logo_-removebg-preview.png" alt="logo">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="LetestEvent.html">Letest Event</a></li>
+              <li><a href="paidInternship.html"> Paid Internship</a></li>
+              <li><a href="freeInternship.html">Free Internship</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="paid-course.html">Paid Course</a></li>
+              <li><a href="course.html">Free Course</a></li>
+            </ul>
+          </li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#recent-posts">Blog</a></li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quiz <i class=" "></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="java.html">Java</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <i class=""></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">DSA</a></li>
+                  <li><a href="#">C++</a></li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">C</a></li>
+                </ul>
+              </li>
+
+              <li><a href="#">Python</a></li>
+              <li><a href="#">Kotlin</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </li>
+
+          <li><a href="sample-inner-page.html">Contact</a></li>
+        </ul>
+      </nav>
 
 
 
-    <!-- ======= Footer ======= -->
 
-    <footer id="footer" class="footer">
 
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-5 col-md-12 footer-info">
-                    <p>Explore a world of innovation and opportunities with us. We are dedicated to providing
-                        top-notch IT services, fostering learning through internships, and shaping futures. Join us on
-                        this journey of growth and success!</p>
-                    <a href="index.html">ADV Indian Coder</a>
 
-                    <div class="social-links d-flex mt-4">
-                        <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
-                        <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL"
-                            class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
-                                class="bi bi-linkedin"></i></i></a>
-                    </div>
-                    <br><br>
-                    <h2><a href="index.html"></a>ADV Indian Coder</h2><br><br>
-                </div>
+      <!-- .navbar -->
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="index.html#hero">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#portfolio">Courses</a></li>
-                        <li><a href="index.html#team">Team</a></li>
-                        <li><a href="index.html#recent-posts">Blog</a></li>
-                    </ul>
-                </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="index.html">Web Development</a></li>
-                        <li><a href="index.html">Data Science</a></li>
-                        <li><a href="index.html">Artificial Intelligence</a></li>
-                        <li><a href="index.html">Java Programming</a></li>
-                        <li><a href="index.html">UI/UX Design</a></li>
-                        <li><a href="index.html">Python Programming</a></li>
-                        <li><a href="index.html">C++ Programming</a></li>
-                        <li><a href="index.html">Machine Learning</a></li>
-                        <li><a href="index.html">Cloud Computing</a></li>
-                    </ul>
-                </div>
+    </div>
+  </header><!-- End Header -->
 
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h3>Contact Us</h3>
-                    <p>
-                        603104 mamallapuram <br>
-                        Chennai, India<br>
-                        <br><br>
-                        <strong>Phone:</strong> 9262955192<br>
-                        <strong>Email:</strong> advindiancoder@gmail.com<br>
-                    </p>
-                </div>
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Free Internship Opportunity!</h2>
+              <p>Unlock your potential with our exciting internship program. Gain hands-on experience, enhance your
+                skills, and jumpstart your career. Apply now and embark on a journey towards success!</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main><!-- End #main -->
+
+
+  <!-- Internship Services Section Design for ADV Indian Coder -->
+  <section class="services" id="internship"
+    style="background-image: url(''); background-size: cover; background-position: center;">
+    <h2 class="heading">Internship Program at <span>ADV Indian Coder</span></h2>
+
+    <div class="services-container">
+
+      <!-- Web Development Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/web development.png" alt="Web Development Internship Image">
+        </div>
+        <i class="bx bx-code-alt"></i>
+        <h3>Web Development Internship</h3>
+        <p>
+          Explore the exciting world of web development through our 4-Week Virtual Internship Program at ADV Indian
+          Coder.
+          Gain hands-on experience, receive an official Offer Letter, and enhance your skills in a dynamic learning
+          environment.
+          Apply now to kickstart your journey in web development!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Data Science Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/data science.jpeg" alt="Data Science Internship Image">
+        </div>
+        <i class="bx bxs-data"></i>
+        <h3>Data Science Internship</h3>
+        <p>
+          Dive into the world of data science with our 4-Week Virtual Internship Program. Join ADV Indian Coder to
+          receive valuable
+          insights, an official Offer Letter, and a chance to boost your career in data science. Apply now to embark
+          on a rewarding
+          internship experience!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Artificial Intelligence Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/artificial inteligence.jpeg" alt="AI Internship Image">
+        </div>
+        <i class="bx bx-brain"></i>
+        <h3>Artificial Intelligence Internship</h3>
+        <p>
+          Immerse yourself in the realm of artificial intelligence with our specialized internship program. Unlock the
+          potential of AI,
+          receive an official Offer Letter, and build a foundation for a successful career. Apply now to join ADV
+          Indian Coder in
+          shaping the future of AI!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Java Programming Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/java programming.jpeg" alt="Java Programming Internship Image">
+        </div>
+        <i class="bx bxl-java"></i>
+        <h3>Java Programming Internship</h3>
+        <p>
+          Master the art of Java programming through our intensive internship program. Gain practical experience,
+          receive an official
+          Offer Letter, and propel your career in the world of Java development. Apply now to become a Java expert
+          with ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- UI/UX Design Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/UI Ux.jpeg" alt="UI/UX Design Internship Image">
+        </div>
+        <i class="bx bxs-paint"></i>
+        <h3>UI/UX Design Internship</h3>
+        <p>
+          Unleash your creativity in the field of UI/UX design with our specialized internship program. Receive
+          hands-on experience,
+          an official Offer Letter, and the opportunity to shape user experiences. Apply now to redefine design
+          standards with ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Python Programming Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/python.jpeg" alt="Python Programming Internship Image">
+        </div>
+        <i class="bx bxl-python"></i>
+        <h3>Python Programming Internship</h3>
+        <p>
+          Delve into the world of Python programming with our immersive internship program. Acquire hands-on skills,
+          receive an official
+          Offer Letter, and pave your way to success in Python development. Apply now to become a Python pro with ADV
+          Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- C++ Programming Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/c++.jpeg" alt="C++ Programming Internship Image">
+        </div>
+        <i class="bx bxl-c-plus-plus"></i>
+        <h3>C++ Programming Internship</h3>
+        <p>
+          Sharpen your skills in C++ programming with our dedicated internship program. Gain practical insights,
+          receive an official
+          Offer Letter, and advance your career in C++ development. Apply now to become a proficient C++ coder with
+          ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+
+
+
+
+      <!-- Front-End Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/front end.jpeg" alt="FrontEnd Development Internship Image">
+        </div>
+        <i class="bx bxl-c-plus-plus"></i>
+        <h3>Front-end Development Internship</h3>
+        <p>
+          Sharpen your skills in Front-end Development with our dedicated internship program. Gain practical insights,
+          receive an official
+          Offer Letter, and advance your career in Front-end Development. Apply now to become a proficient coder with
+          ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+
+
+
+      <!-- C++ Programming Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="cybersecurity.jpeg" alt="C++ Programming Internship Image">
+        </div>
+        <i class="bx bxl-c-plus-plus"></i>
+        <h3>Cybersecurity Internship</h3>
+        <p>
+          Sharpen your skills in Cybersecurity with our dedicated internship program. Gain practical insights,
+          receive an official
+          Offer Letter, and advance your career in Cybersecurity. Apply now to become a proficient in Cybersecurity with
+          ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Machine Learning Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="/machine learning.jpeg" alt="Machine Learning Internship Image">
+        </div>
+        <i class="bx bxl-tensorflow"></i>
+        <h3>Machine Learning Internship</h3>
+        <p>
+          Immerse yourself in the fascinating world of machine learning with our specialized internship program. Gain
+          valuable
+          experience, receive an official Offer Letter, and pave your way to a successful career in machine learning.
+          Apply now
+          to become a machine learning expert with ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+      <!-- Data Analytics Internship -->
+      <div class="services-box">
+        <div class="image-container">
+          <img src="data analytics.jpeg" alt="Machine Learning Internship Image">
+        </div>
+        <i class="bx bxl-tensorflow"></i>
+        <h3>Data Analytics Internship</h3>
+        <p>
+          Immerse yourself in the fascinating world of Data Analytics with our specialized internship program. Gain
+          valuable
+          experience, receive an official Offer Letter, and pave your way to a successful career in Data Analytics
+          Internship.
+          Apply now
+          to become a Data Analytics Internship expert with ADV Indian Coder!
+        </p>
+        <div class="perks">
+          <h4>Perks:</h4>
+          <ul>
+            <li>Official Offer Letter</li>
+            <li>Internship Certificate</li>
+            <li>Letter of Recommendation based on Performance</li>
+          </ul>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1D7RERNfzxyc9PER9oCUggY5LAG_f7-5Gklibv1ygPNKCRw/viewform?usp=sf_link"
+          class="btn">Apply Now <span class="free-label">(Free)</span></a>
+      </div>
+
+
+
+      <!-- Additional internship boxes can be added based on other domains -->
+
+    </div>
+  </section>
+  <!-- End of Internship Services Section -->
+
+
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <p>Explore a world of innovation and opportunities with us. We are dedicated to providing
+            top-notch IT services, fostering learning through internships, and shaping futures. Join us on
+            this journey of growth and success!</p>
+          <a href="index.html">ADV Indian Coder</a>
+
+          <div class="social-links d-flex mt-4">
+            <a href="https://t.me/advindiancoder" class="telegram"><i class="bi bi-telegram"></i></a>
+            <a href="https://youtube.com/@advindiancoder" class="twitter"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077799043093&mibextid=ZbWKwL" class="facebook"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/adv_indian_coder_?igshid=OGQ5ZDc2ODk2ZA==" class="instagram"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/advindiancoder/" class="linkedin"><i
+                class="bi bi-linkedin"></i></i></a>
+          </div>
+          <br><br>
+          <h2><a href="index.html"></a>ADV Indian Coder</h2><br><br>
         </div>
 
-        <div class="container mt-4">
-            <div class="copyright">
-                &copy; Copyright <strong><span>ADV Indian Coder</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">Vinay kumar java developer</a>
-            </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#portfolio">Courses</a></li>
+            <li><a href="index.html#team">Team</a></li>
+            <li><a href="index.html#recent-posts">Blog</a></li>
+          </ul>
         </div>
 
-    </footer><!-- End Footer -->
-    <!-- End Footer -->
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="index.html">Web Development</a></li>
+            <li><a href="index.html">Data Science</a></li>
+            <li><a href="index.html">Artificial Intelligence</a></li>
+            <li><a href="index.html">Java Programming</a></li>
+            <li><a href="index.html">UI/UX Design</a></li>
+            <li><a href="index.html">Python Programming</a></li>
+            <li><a href="index.html">C++ Programming</a></li>
+            <li><a href="index.html">Machine Learning</a></li>
+            <li><a href="index.html">Cloud Computing</a></li>
+          </ul>
+        </div>
 
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h3>Contact Us</h3>
+          <p>
+            603104 mamallapuram <br>
+            Chennai, India<br>
+            <br><br>
+            <strong>Phone:</strong> 9262955192<br>
+            <strong>Email:</strong> advindiancoder@gmail.com<br>
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <div id="preloader"></div>
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>ADV Indian Coder</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">Vinay kumar java developer</a>
+      </div>
+    </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 
 
