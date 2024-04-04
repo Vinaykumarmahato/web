@@ -50,7 +50,7 @@
 /* Style input fields */
 .input_field {
   margin-bottom: 20px;
-  box-shadow: rgb(245, 45, 245);
+  box-shadow: rgb(8, 8, 8);
 }
 
 .input_field label {
@@ -58,7 +58,7 @@
   margin-bottom: 8px;
   font-weight: bold;
   color: #e511fd;
-  box-shadow: rgb(244, 52, 244);
+  box-shadow: rgb(2, 2, 2);
 }
 
 .input_field input {
@@ -111,7 +111,7 @@ a {
 }
 
 a:hover {
-  color: #b60027;
+  color: #0003b6;
   text-decoration: none;
 }
 
@@ -128,9 +128,13 @@ h6 {
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 20px 0;
   overflow: hidden;
 }
+
+/* .company-logo{
+  width: 60px;
+} */
 
 .sections-bg {
   background-color: #f6f6f6;
@@ -863,13 +867,13 @@ button:hover {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 30px;
-  color: #f71ff3; /* Text color, you can change this */
+  color: #061bdf; /* Text color, you can change this */
 }
 
 .section-title span {
   display: block;
   font-size: 0.8em;
-  color: #a41cf9d1; /* Subtitle color, you can change this */
+  color: #0ae01cd1; /* Subtitle color, you can change this */
 }
 
 /* Optional: Hover effect */
@@ -878,12 +882,12 @@ button:hover {
 }
 
 .section-title:hover span {
-  color: #ef4efa; /* Change subtitle color on hover, you can change this */
+  color: #1013f1; /* Change subtitle color on hover, you can change this */
 }
 
 
 .clients {
-  padding: 40px 0;
+  padding: 5px 0;
 }
 
 .clients .swiper {
@@ -961,7 +965,8 @@ button:hover {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(235, 102, 206, 0.524), rgba(252, 20, 252, 0.853)), url("/background.jpg") center center;
+  background: linear-gradient(#87CEEB
+  , rgba(178, 86, 214, 0.853)), url("/background.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -1007,6 +1012,10 @@ button:hover {
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
 .call-to-action .play-btn:after {
@@ -1099,7 +1108,7 @@ button:hover {
 }
 
 .heading span {
-  color: #f410ca; /* Color for the span text, you can change this */
+  color: #104df4; /* Color for the span text, you can change this */
   font-weight: bold;
 }
 
@@ -1108,7 +1117,7 @@ button:hover {
   display: block;
   height: 2px;
   width: 50%;
-  background-color: #e40707; /* Underline color, you can change this */
+  background-color: #07e412; /* Underline color, you can change this */
   position: absolute;
   bottom: 0;
   left: 25%; /* Adjust the position of the underline */
@@ -1140,7 +1149,7 @@ button:hover {
 
 /* Individual service box styles */
 .services-box {
-  box-shadow: 0 0 20px rgb(241, 6, 241);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.774);
   max-width: 350px;
   width: 100%;
   background-color: #fff;
@@ -1153,7 +1162,7 @@ button:hover {
 
 .services-box:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgb(247, 10, 247);
+  box-shadow: 0 0 30px rgba(17, 72, 223, 0.719);
 }
 
 /* Hover effect */
@@ -1293,7 +1302,7 @@ button:hover {
   box-sizing: border-box; /* Use border-box for consistent box sizing */
   padding: 40px; /* Increased padding for a more comfortable feel */
   margin: 30px 20px; /* Slightly increased margin for better spacing */
-  box-shadow: 0 0 20px rgba(242, 53, 213, 0.963); /* Enhanced box shadow for depth */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.774); /* Enhanced box shadow for depth */
   position: relative;
   background: #fff;
   border-radius: 15px; /* Rounded corners for a modern touch */
@@ -1302,7 +1311,7 @@ button:hover {
 
 .testimonials .testimonial-item:hover {
   transform: translateY(-5px); /* Lift the testimonial slightly on hover */
-  box-shadow: 0 0 30px rgba(241, 33, 206, 0.959); /* Intensified shadow on hover */
+  box-shadow: 0 0 30px rgba(33, 82, 241, 0.959); /* Intensified shadow on hover */
 }
 
 .testimonials .testimonial-item::before {
@@ -1673,252 +1682,215 @@ button:hover {
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
-.team .member {
+
+
+/* Our Team Section Styles */
+#team {
+  padding: 60px 0;
+}
+
+.team .section-header {
   text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  padding: 20px; /* Slightly increased padding for a more spacious feel */
-  overflow: hidden;
-  box-shadow: 0 2px 30px rgba(245, 60, 236, 0.863); /* Enhanced box shadow for depth */
-  transition: transform 0.3s ease-in-out;
+  margin-bottom: 40px;
 }
 
-.team .member:hover {
-  transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 2px 40px rgba(201, 30, 239, 0.879); /* Intensified shadow on hover */
-}
-
-.team .member img {
-  border-radius: 50%; /* Round the corners of the image for a polished look */
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 15px; /* Increased margin for spacing between image and content */
-}
-
-.team .member h4 {
-  margin-bottom: 10px; /* Slightly increased margin for better spacing */
-}
-
-.team .member p {
-  color: #666; /* Darkened text color for better readability */
-}
-
-.team .member a {
-  color: #3498db; /* Professional blue color for links */
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.team .member a:hover {
-  color: #1e87f0; /* Darkened blue on hover for a subtle interactive effect */
-}
-
-
-.team .member img {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.team .member .member-content {
-  padding: 0 20px 30px 20px;
-}
-
-.team .member h4 {
+.team .section-header h2 {
+  font-size: 30px;
   font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 2px;
-  font-size: 20px;
+  color: #030514;
 }
 
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 14px;
-  color: #6c757d;
+.team .section-header p {
+  font-size: 18px;
+  color: #090a0e;
+  line-height: 1.8;
 }
 
-.team .member p {
-  padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #6c757d;
-}
-
-.team .member .social {
-  margin-top: 15px;
-  margin-bottom: 10px;
+.team .row {
+  margin-top: 30px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team .member {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 0 15px 30px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.team .member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  object-fit: cover;
+}
+
+.team .member h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.team .member span p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
 }
 
 .team .member .social a {
-  color: #a2a2a2;
-  transition: 0.3s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #bbbbbb;
+  color: #333;
+  font-size: 20px;
+  margin: 0 5px;
+  transition: color 0.3s;
 }
 
 .team .member .social a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #007bff;
 }
 
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+/* Slide Animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
+
+.team .member {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .team .member {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team .member {
+    margin: 0 10px 30px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
-.pricing .pricing-item {
-  padding: 70px 40px; /* Increased padding for a more spacious feel */
-  box-shadow: 0 5px 25px -5px rgb(245, 10, 190); /* Enhanced box shadow for depth */
-  background: #f9f9f9; /* Lightened background color for better contrast */
-  height: 100%;
-  position: relative;
-  border-radius: 20px; /* Increased border-radius for a smoother appearance */
-  transition: transform 0.3s ease-in-out;
+/* Pricing Section Styles */
+#pricing {
+  padding: 60px 0;
 }
 
-.pricing .pricing-item:hover {
-  transform: scale(1.02); /* Slightly scale up on hover for a subtle interactive effect */
+.pricing-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 20px; /* Increased margin for better spacing */
-  font-size: 24px; /* Larger font size for better readability */
-  color: #333; /* Darkened text color for better contrast */
-  text-align: center;
+.pricing-item:hover {
+  transform: translateY(-5px);
 }
 
-.pricing .icon {
-  margin: 30px auto 20px auto; /* Adjusted margin for better spacing */
-  width: 80px; /* Increased size for better proportion */
-  height: 80px; /* Increased size for better proportion */
-  background: var(--color-accent); /* Changed background color for better contrast */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  transform-style: preserve-3d;
-}
-
-.pricing .icon i {
-  color: #fff;
-  font-size: 32px; /* Increased font size for a more impactful visual */
-  transition: ease-in-out 0.3s;
-  line-height: 0;
-}
-
-.pricing .icon::before,
-.pricing .icon::after {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-  transition: all 0.3s ease-out 0s;
-}
-
-.pricing .icon::before {
-  height: 90px; /* Adjusted size for better proportion */
-  width: 90px; /* Adjusted size for better proportion */
-  background: #87c1bb;
-  transform: translateZ(-1px);
-}
-
-.pricing .icon::after {
-  height: 110px; /* Adjusted size for better proportion */
-  width: 110px; /* Adjusted size for better proportion */
-  background: #d2eeeb;
-  transform: translateZ(-2px);
-}
-
-.pricing h4 {
-  font-size: 60px; /* Increased font size for a more prominent number */
-  color: var(--color-secondary);
+.pricing-item h3 {
+  font-size: 24px;
   font-weight: 700;
-  font-family: var(--font-secondary);
-  margin-bottom: 5px; /* Adjusted margin for better spacing */
-  text-align: center;
+  color: #333;
 }
 
-.pricing h4 sup {
-  font-size: 32px; /* Increased font size for a more prominent number */
+.pricing-item h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #175bec;
+  margin: 20px 0;
 }
 
-.pricing h4 span {
-  color: rgba(108, 117, 125, 0.8);
-  font-size: 20px; /* Increased font size for better readability */
-  font-weight: 500; /* Adjusted font weight for better emphasis */
-}
-
-.pricing ul {
-  padding: 30px 0; /* Increased padding for better spacing */
+.pricing-item ul {
   list-style: none;
-  color: #6c757d;
-  text-align: center; /* Center align the list items */
-  line-height: 24px; /* Adjusted line height for better spacing */
+  padding: 0;
 }
 
-.pricing ul li {
-  padding: 15px 0; /* Adjusted padding for better spacing */
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center align the list items */
+.pricing-item ul li {
+  margin-bottom: 10px;
 }
 
-.pricing ul i {
-  color: #059652;
-  font-size: 28px; /* Increased font size for better visibility */
-  padding-right: 5px; /* Adjusted padding for better spacing */
+.pricing-item ul li i {
+  margin-right: 10px;
+  color: #28a745;
 }
 
-.pricing ul .na,
-.pricing ul .na i {
-  color: rgba(108, 117, 125, 0.5);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .buy-btn {
-  display: inline-block;
-  padding: 15px 60px; /* Adjusted padding for a more substantial button */
-  border-radius: 50px;
+.buy-btn {
+  background-color: #1a1eee;
   color: #fff;
-  background: var(--color-primary); /* Changed background color for better contrast */
-  font-size: 18px; /* Increased font size for better visibility */
-  font-weight: 600;
-  font-family: var(--font-primary);
-  transition: 0.3s;
-  margin: 20px 10px; /* Increased margin for better spacing */
   border: none;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
 }
 
-.pricing .buy-btn:hover {
-  background: var(--color-secondary); /* Changed background color on hover for better contrast */
+.buy-btn:hover {
+  background-color: #13ec38;
 }
 
-.pricing .featured {
-  z-index: 10;
-  border: 3px solid var(--color-primary);
+.subscribe-icon {
+  width: 24px;
+  margin-right: 10px;
 }
 
-@media (min-width: 992px) {
-  .pricing .featured {
-    transform: scale(1.08); /* Slightly increased scale for better emphasis */
-  }
+/* Section Header Styles */
+.section-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
 }
+
+.section-header p {
+  font-size: 18px;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Featured Pricing Item Styles */
+.featured {
+  border: 2px solid #1a41ec;
+}
+
+.featured .pricing-item h3 {
+  color: #002fff;
+}
+
+.featured .pricing-item h4 {
+  color: #0004ff;
+}
+
+.featured .buy-btn {
+  background-color: transparent;
+  border: 2px solid #0066ff;
+  color: #0400ff;
+}
+
+.featured .buy-btn:hover {
+  background-color: #13ec38;
+  color: #ffffff;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -2012,7 +1984,7 @@ button:hover {
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
 .recent-posts article {
-  box-shadow: 0 6px 20px rgba(243, 21, 221, 0.961); /* Increased box shadow for depth */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.774); /* Increased box shadow for depth */
   background-color: #fff;
   padding: 40px; /* Increased padding for a more spacious feel */
   height: 100%;
@@ -2023,7 +1995,7 @@ button:hover {
 
 .recent-posts article:hover {
   transform: translateY(-5px); /* Lift the article slightly on hover */
-  box-shadow: 0 8px 30px rgba(243, 32, 222, 0.863); /* Intensified shadow on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.774); /* Intensified shadow on hover */
 }
 
 .recent-posts article h2 {
@@ -2036,13 +2008,13 @@ button:hover {
 }
 
 .recent-posts article a {
-  color: #3498db; /* Professional blue color for links */
+  color: #f0f2f3; /* Professional blue color for links */
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .recent-posts article a:hover {
-  color: #1e87f0; /* Darkened blue on hover for a subtle interactive effect */
+  color: #17d110; /* Darkened blue on hover for a subtle interactive effect */
 }
 
 
@@ -2050,7 +2022,7 @@ button:hover {
   max-height: 240px;
   margin: -30px -30px 15px -30px;
   overflow: hidden;
-  box-shadow: purple;
+  box-shadow: rgb(13, 46, 230);
 }
 
 .recent-posts .post-category {
