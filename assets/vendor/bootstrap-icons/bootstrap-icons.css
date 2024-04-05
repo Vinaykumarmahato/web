@@ -1036,7 +1036,11 @@ url("./fonts/bootstrap-icons.woff?2820a3852bdb9a5832199cc61cec4e65") format("wof
 .bi-play-btn-fill::before { content: "\f4f0"; }
 .bi-play-btn::before { content: "\f4f1"; }
 .bi-play-circle-fill::before { content: "\f4f2"; }
-.bi-play-circle::before { content: "\f4f3"; }
+.bi-play-circle::before { content: "\f4f3"; 
+  margin-right: 8px;
+  color: #2de51c;
+
+}
 .bi-play-fill::before { content: "\f4f4"; }
 .bi-play::before { content: "\f4f5"; }
 .bi-plug-fill::before { content: "\f4f6"; }

@@ -2202,254 +2202,188 @@ button:hover {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-  width: 100%;
+/* Hero Section */
+#hero {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+
+}
+
+#hero .container {
   position: relative;
-  background: var(--color-primary);
-  padding: 60px 0 0 0;
 }
 
-@media (min-width: 1365px) {
-  .hero {
-    background-attachment: fixed;
-  }
+#hero h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  margin-right: 55px
 }
 
-.hero h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.hero p {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.hero .btn-get-started {
-  font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 14px 40px;
-  border-radius: 50px;
-  transition: 0.3s;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow:#c9d1d9;
-  border: 2px solid #c9d1d9;
-}
-
-.hero .btn-get-started:hover {
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.hero .btn-watch-video {
+#hero p {
   font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: #fff;
-  font-weight: 600;
-  box-shadow: rgb(13, 12, 12);
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.hero .btn-watch-video i {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 32px;
+#hero .btn-get-started,
+#hero .btn-watch-video {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border-radius: 30px;
   transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
+  position: relative; /* Required for icon positioning */
 }
+<!-- HTML !-->
+<button class="button-9" role="button">Button 9</button>
 
-.hero .btn-watch-video:hover i {
+/* CSS */
+
+
+
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+#hero .btn-get-started::before,
+#hero .btn-watch-video::before {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
 }
 
-@media (max-width: 640px) {
-  .hero h2 {
-    font-size: 36px;
+#hero .btn-get-started:hover,
+#hero .btn-watch-video:hover {
+  background-color: #0056b3;
+}
+
+
+#hero .animated-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Icon Boxes Section */
+.icon-boxes {
+  background-color: #fff;
+  padding: 40px 0;
+  border-radius: 1px;
+}
+
+.icon-boxes .icon-box {
+  text-align: center;
+}
+
+.icon-boxes .icon-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.icon-boxes .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+  padding-bottom:15px;
+
+}
+
+.icon-boxes .title a {
+  color: #333;
+  text-decoration: none;
+}
+
+.icon-boxes .title a:hover {
+  color: #007bff;
+}
+
+/* Responsive Styles */
+@media (max-width: 912px) {
+  #hero h2 {
+    font-size: 24px;
   }
 
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
+  #hero p {
     font-size: 14px;
   }
-}
 
-.hero .icon-boxes {
-  padding-bottom: 60px;
-}
-
-
-@media (max-width: 640px) {
-  .hero h2 {
-    font-size: 36px;
-  }
-
-  .hero .btn-get-started,
-  .hero .btn-watch-video {
-    font-size: 14px;
-  }
-}
-
-.hero .icon-boxes {
-  padding-bottom: 60px;
-}
-
-@media (min-width: 1200px) {
-  .hero .icon-boxes:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: calc(50% + 20px);
-    background-color: #fff;
+  .icon-boxes .title {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 768px) {
-  .order-lg-1 {
-    order: -1; /* Changing the order to negative */
+  #hero {
+    padding: 30px 0;
   }
-  .order-lg-2 {
-    order: -2; /* Changing the order to negative */
+
+  #hero h2 {
+    font-size: 20px;
+  }
+
+  #hero p {
+    font-size: 12px;
+  }
+
+  #hero .btn-get-started,
+  #hero .btn-watch-video {
+    font-size: 12px;
+    padding: 8px 15px;
+    margin-right: 10px;
+  }
+
+  .icon-boxes .title {
+    font-size: 16px;
   }
 }
 
-
-.hero .icon-box {
-  padding: 70px 40px; /* Increased padding for a more prominent appearance */
-  position: relative;
-  overflow: hidden;
-  background: rgb(248, 248, 248); /* Adjusted shade of purple for a modern look */
-  box-shadow: 0 0 30px 0 rgba(2, 2, 2, 0.99); /* Enhanced box shadow for depth */
-  transition: all 0.3s ease-in-out;
-  border-radius: 12px; /* Rounded corners for a contemporary touch */
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  color: #fff; /* White text for better contrast */
+/* Additional Styles for Aesthetic Enhancement */
+#hero h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.hero .icon-box:hover {
-  transform: scale(1.05); /* Scale up on hover for a subtle interactive effect */
-  box-shadow: 0 0 40px 0 rgb(0, 0, 0); /* Intensified shadow on hover */
+#hero p {
+  line-height: 1.5;
 }
 
-.hero .icon-box::before {
-  content: '\2605'; /* Unicode for a star symbol */
-  font-size: 30px; /* Increased font size for a decorative icon */
-  color: #f8c600; /* Gold color for the icon */
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  transform: translateX(-50%);
+.icon-boxes .icon-box {
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.hero .icon-box h3 {
-  margin-top: 20px; /* Increased margin for better spacing */
-  font-size: 24px; /* Larger font size for the heading */
-}
-
-.hero .icon-box p {
-  margin-top: 15px; /* Increased margin for better spacing */
-  color: #0d20e9; /* Lightened text color for better readability */
-}
-
-.hero .icon-box a {
-  color: #f8c600; /* Gold color for links */
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.hero .icon-box a:hover {
-  color: #d4a009; /* Darkened gold on hover for a subtle interactive effect */
-}
-
-
-
-.hero .icon-box .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.hero .icon-box .title a {
-  color: #1356e7;
-  transition: 0.3s;
-}
-
-.hero .icon-box .icon {
-  margin-bottom: 20px;
-  padding-top: 10px;
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-  font-size: 48px;
-  line-height: 1;
-  color: #1356e7;
-}
-
-.hero .icon-box:hover {
-  background: ;
-}
-
-.hero .icon-box:hover .title a,
-.hero .icon-box:hover .icon {
-  color: #1356e7;
-}
-
-
-.hero .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in-out;
-  border-radius: 20px;
-  text-align: center;
-  color: #333;
-}
-
-.hero .icon-box img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* Rounded corners for the image */
-  object-fit: cover; /* Ensure the image fills the container */
-  margin-bottom: 20px;
-}
-
-.hero .icon-box h4 {
-  font-size: 20px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.hero .icon-box a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.hero .icon-box a:hover {
-  color: #0056b3;
-}
-
-.hero .icon-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 576px) {
-  .hero .icon-box {
-    padding: 20px;
-  }
+.icon-boxes .icon-box:hover {
+  transform: translateY(-3px);
 }
 
 

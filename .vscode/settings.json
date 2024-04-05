@@ -1,5 +1,8 @@
 {
     "liveServer.settings.port": 5501,
     "livePreview.hostIP": "192.168.53.221",
-    "livePreview.portNumber": 5501
+    "livePreview.portNumber": 5501,
+    "files.autoSave": "afterDelay",
+    "intellicodeApiExamples.python.enabled": false,
+    "intellicodeApiExamples.typescript.enabled": false
 }
