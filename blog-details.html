@@ -57,6 +57,7 @@
     </div>
   </section><!-- End Top Bar -->
 
+  
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -66,18 +67,35 @@
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="course.html">Courses</a></li>
-          <li><a href="index.html#team">Team</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="LetestEvent.html">Letest Event</a></li>
+              <li><a href="paidInternship.html"> Paid Internship</a></li>
+              <li><a href="freeInternship.html">Free Internship</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="paid-course.html">Paid Course</a></li>
+              <li><a href="course.html">Free Course</a></li>
+            </ul>
+          </li>
+          <li><a href="#team">Team</a></li>
           <li><a href="#recent-posts">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Quiz</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="#">Java</a></li>
-              <li class="dropdown"><a href="#"><span>More</span> <i
-                    class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quiz <i class=" "></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="java.html">Java</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">More <i class=""></i></a>
+                <ul class="dropdown-menu">
                   <li><a href="#">DSA</a></li>
                   <li><a href="#">C++</a></li>
                   <li><a href="#">HTML</a></li>
@@ -85,21 +103,29 @@
                   <li><a href="#">C</a></li>
                 </ul>
               </li>
+
               <li><a href="#">Python</a></li>
               <li><a href="#">Kotlin</a></li>
               <li><a href="#">JavaScript</a></li>
             </ul>
           </li>
+
           <li><a href="sample-inner-page.html">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
+
+
+
+
+
+
+      <!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
   </header><!-- End Header -->
-  <!-- End Header -->
 
   <main id="main">
 
